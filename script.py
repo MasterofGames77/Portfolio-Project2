@@ -1,4 +1,4 @@
-from games import genres
+from games import *
 
 from linked_list import LinkedList
 
