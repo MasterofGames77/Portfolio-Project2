@@ -2,7 +2,7 @@ genres = ['platformer', 'role-playing game', 'shooter', 'puzzle', 'action', 'adv
          'fighting', 'batte royale', 'survival', 'sports', 'rhythm', 'horror', 'hack and slash', 
          'sandbox', 'first-person', 'third-person', 'point and click']
 
-game_data_headings = ['genre', 'title', 'developer', 'system', 'release date']
+#game_data_headings = ['genre', 'title', 'developer', 'system', 'release date']
 
 games =[
     [
