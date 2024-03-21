@@ -1,12 +1,9 @@
 from data import *
-
+from greet import *
 from linked_list import LinkedList
 
-def greet():
-    print("Hello, this is Michael's Video Game Recommendation Program.")
-    print("This program provides you with a list of different video games from a variety of genres.")
 
-print(greet())
+greet()
 
 # Write code to insert game types into data structure (LinkedList) here. The data is in data.py
 def insert_game_genres():
@@ -56,13 +53,12 @@ while len(selected_game_genre) == 0:
         if select_genre == 'y':
             selected_game_genre = matching_genres[0]
             print("Selected Game Genre: " + selected_game_genre)
-            print("This statement works")
             game_list_head = my_games_list.get_head_node()
             while game_list_head.get_next_node() is not None:
                 sublist_head = game_list_head.get_value().get_head_node()
-                if sublist_head.get_value() is not None and sublist_head.get_value()[0] == selected_game_genre:
+                if sublist_head.get_value()[0] == selected_game_genre:
                     while sublist_head.get_next_node() is not None:
-                        print("----------------------------")
+                        print("--------------------------")
                         print("Name: " + sublist_head.get_value()[1])
                         print("Developer: " + sublist_head.get_value()[2])
                         print("Released On: " + sublist_head.get_value()[3])
